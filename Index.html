@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Traffic Management</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .red { color: red; font-size: 24px; }
+        .green { color: green; font-size: 24px; }
+    </style>
+</head>
+<body>
+    <h1>Smart Traffic Management System</h1>
+    <h2>Car Count: {{ car_count }}</h2>
+    <h2 class="{{ 'green' if traffic_light == 'GREEN' else 'red' }}">Traffic Light: {{ traffic_light }}</h2>
+</body>
+</html>
